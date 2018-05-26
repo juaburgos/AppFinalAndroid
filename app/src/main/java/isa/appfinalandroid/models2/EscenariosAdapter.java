@@ -36,7 +36,7 @@ public class EscenariosAdapter extends RecyclerView.Adapter<EscenariosAdapter.Vi
     @Override
     public void onBindViewHolder(EscenariosAdapter.ViewHolder holder, int position) {
         EscenariosDeportivos a=dataset.get(position);
-        holder.grupo.setText(a.getAdminstracion().toString());
+        holder.nombre.setText(a.getNombre().toString());
         holder.personas.setText(a.getComuna().toString());
         holder.orga.setText(a.getLocalizacion().toString());
     }
@@ -53,13 +53,13 @@ public class EscenariosAdapter extends RecyclerView.Adapter<EscenariosAdapter.Vi
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView grupo;
+        private TextView nombre;
         private TextView personas;
         private TextView orga;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            grupo=(TextView)itemView.findViewById(R.id.ed_grupo);
+            nombre=(TextView)itemView.findViewById(R.id.ed_nombre);
             personas=(TextView)itemView.findViewById(R.id.ed_personas);
             orga=(TextView)itemView.findViewById(R.id.ed_org);
         }

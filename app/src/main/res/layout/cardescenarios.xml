@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_x="4dp"
             android:layout_y="50dp"
-            android:text="Grupo"
+            android:text="Nombre"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
@@ -54,7 +54,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
-            android:id="@+id/ed_grupo"
+            android:id="@+id/ed_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_x="72dp"
