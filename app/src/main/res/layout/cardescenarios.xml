@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -17,21 +18,11 @@
 
 
         <TextView
-            android:id="@+id/titulo"
-            android:layout_width="154dp"
-            android:layout_height="wrap_content"
-            android:layout_x="110dp"
-            android:layout_y="17dp"
-            android:text="Municipios Pasto"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="18sp" />
-
-        <TextView
             android:id="@+id/txt_correo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_x="4dp"
-            android:layout_y="50dp"
+            android:layout_y="19dp"
             android:text="Nombre"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -39,9 +30,9 @@
             android:id="@+id/txt_direccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="0dp"
-            android:layout_y="74dp"
-            android:text="N° Personas"
+            android:layout_x="5dp"
+            android:layout_y="48dp"
+            android:text="Administracion"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
@@ -49,33 +40,64 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_x="4dp"
-            android:layout_y="104dp"
-            android:text="Organizacion"
+            android:layout_y="76dp"
+            android:text="Comuna"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
             android:id="@+id/ed_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_x="72dp"
-            android:layout_y="51dp"
+            android:layout_x="77dp"
+            android:layout_y="18dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
-            android:id="@+id/ed_personas"
+            android:id="@+id/ed_adminis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_x="74dp"
-            android:layout_y="77dp"
+            android:layout_x="106dp"
+            android:layout_y="48dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
-            android:id="@+id/ed_org"
+            android:id="@+id/ed_comuna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_x="73dp"
-            android:layout_y="102dp"
+            android:layout_y="79dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="3dp"
+            android:layout_y="111dp"
+            android:text="Localizacion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/ed_loca"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_x="97dp"
+            android:layout_y="115dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <TextView
+            android:id="@+id/ed_matr"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_x="87dp"
+            android:layout_y="146dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="147dp" />
 
 
     </AbsoluteLayout>

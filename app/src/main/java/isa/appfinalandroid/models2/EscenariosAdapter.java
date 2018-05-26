@@ -37,8 +37,9 @@ public class EscenariosAdapter extends RecyclerView.Adapter<EscenariosAdapter.Vi
     public void onBindViewHolder(EscenariosAdapter.ViewHolder holder, int position) {
         EscenariosDeportivos a=dataset.get(position);
         holder.nombre.setText(a.getNombre().toString());
-        holder.personas.setText(a.getComuna().toString());
-        holder.orga.setText(a.getLocalizacion().toString());
+        holder.admini.setText(a.getAdminstracion().toString());
+        holder.comuna.setText(a.getComuna().toString());
+        holder.loca.setText(a.getLocalizacion().toString());
     }
     public void agregar(ArrayList<EscenariosDeportivos> list)
     {
@@ -54,14 +55,14 @@ public class EscenariosAdapter extends RecyclerView.Adapter<EscenariosAdapter.Vi
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView nombre;
-        private TextView personas;
-        private TextView orga;
+        private TextView admini,comuna,loca,matr;
 
         public ViewHolder(View itemView) {
             super(itemView);
             nombre=(TextView)itemView.findViewById(R.id.ed_nombre);
-            personas=(TextView)itemView.findViewById(R.id.ed_personas);
-            orga=(TextView)itemView.findViewById(R.id.ed_org);
+            admini=(TextView)itemView.findViewById(R.id.ed_adminis);
+            comuna=(TextView)itemView.findViewById(R.id.ed_comuna);
+            loca=(TextView)itemView.findViewById(R.id.ed_loca);
         }
     }
 }
