@@ -128,6 +128,7 @@ public class MainActivity extends AppCompatActivity
             fragmentClass=EscenariosDeportivosFragment.class;
 
         } else if (id == R.id.nav_slideshow) {
+            fragmentClass=TercerFragment.class;
 
         } else if (id == R.id.nav_manage) {
 
