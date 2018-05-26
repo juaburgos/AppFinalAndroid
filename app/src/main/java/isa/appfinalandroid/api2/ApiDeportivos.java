@@ -13,5 +13,5 @@ import retrofit2.http.GET;
 public interface ApiDeportivos
 {
     @GET("eiji-v24r.json")
-    Call<ArrayList<EscenariosDeportivos>> obtenerListaEtnicos();
+    Call<ArrayList<EscenariosDeportivos>> obtenerListaEscenarios();
 }

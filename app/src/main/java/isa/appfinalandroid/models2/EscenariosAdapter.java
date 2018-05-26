@@ -29,7 +29,7 @@ public class EscenariosAdapter extends RecyclerView.Adapter<EscenariosAdapter.Vi
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.
-                cardetnicos, parent, false);
+                cardescenarios, parent, false);
         return new ViewHolder(view);
     }
 

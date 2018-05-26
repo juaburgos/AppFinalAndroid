@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity
             fragmentClass=MunicipiosFragment.class;
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            fragmentClass=EtnicosFragment.class;
+            fragmentClass=EscenariosDeportivosFragment.class;
 
         } else if (id == R.id.nav_slideshow) {
 

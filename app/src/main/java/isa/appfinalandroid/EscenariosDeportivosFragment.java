@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import isa.appfinalandroid.api2.ApiDeportivos;
+import isa.appfinalandroid.models2.EscenariosAdapter;
+import isa.appfinalandroid.models2.EscenariosDeportivos;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -24,18 +27,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class EtnicosFragment extends Fragment {
-
+public class EscenariosDeportivosFragment extends Fragment {
 
     public static final String TAG="DATOS COLOMBIA";
     private Retrofit retrofit;
-    private EtnicosAdapter listaEtnicos;
+    private EscenariosAdapter listaEscenarios;
     private RecyclerView recyclerView;
     private int ofset;
     private boolean cargar;
     private FragmentActivity myContext;
 
-    public EtnicosFragment() {
+    public EscenariosDeportivosFragment() {
         // Required empty public constructor
     }
 
@@ -44,10 +46,10 @@ public class EtnicosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_etnicos, container, false);
+        View view= inflater.inflate(R.layout.fragment_escenarios_deportivos, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
-        listaEtnicos = new EtnicosAdapter(getContext());
-        recyclerView.setAdapter(listaEtnicos);
+        listaEscenarios = new EscenariosAdapter(getContext());
+        recyclerView.setAdapter(listaEscenarios);
 
         recyclerView.setHasFixedSize(true);
         final GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 1);
@@ -88,17 +90,18 @@ public class EtnicosFragment extends Fragment {
         obtenerDatosReportesVehiculos();
         return view;
     }
-    private void obtenerDatosReportesVehiculos() {
-        ApiEtnicos service = retrofit.create(ApiEtnicos.class);
-        Call<ArrayList<GruposEtnicos>> reporteRespuestaCall = service.obtenerListaEtnicos();
 
-        reporteRespuestaCall.enqueue(new Callback<ArrayList<GruposEtnicos>>() {
+    private void obtenerDatosReportesVehiculos() {
+        ApiDeportivos service = retrofit.create(ApiDeportivos.class);
+        Call<ArrayList<EscenariosDeportivos>> reporteRespuestaCall = service.obtenerListaEscenarios();
+
+        reporteRespuestaCall.enqueue(new Callback<ArrayList<EscenariosDeportivos>>() {
             @Override
-            public void onResponse(Call<ArrayList<GruposEtnicos>> call, Response<ArrayList<GruposEtnicos>> response) {
+            public void onResponse(Call<ArrayList<EscenariosDeportivos>> call, Response<ArrayList<EscenariosDeportivos>> response) {
                 if(response.isSuccessful())
                 {
                     ArrayList listado = response.body();
-                    listaEtnicos.agregar(listado);
+                    listaEscenarios.agregar(listado);
                 }
                 else
                 {
@@ -107,7 +110,7 @@ public class EtnicosFragment extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<ArrayList<GruposEtnicos>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<EscenariosDeportivos>> call, Throwable t) {
                 Log.e(TAG," onFailure: "+t.getMessage());
             }
         });
