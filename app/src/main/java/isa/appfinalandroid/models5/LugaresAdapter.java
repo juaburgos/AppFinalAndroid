@@ -1,6 +1,8 @@
 package isa.appfinalandroid.models5;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +15,8 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import java.util.List;
 
+import isa.appfinalandroid.DialogoFragment;
+import isa.appfinalandroid.MapsActivity;
 import isa.appfinalandroid.R;
 
 /**
@@ -21,6 +25,7 @@ import isa.appfinalandroid.R;
 
 public class LugaresAdapter extends RecyclerView.Adapter<LugaresAdapter.ViewHolder>{
 
+    FragmentActivity mycontex;
     List<Lugares> luga;
     private Context context;
 
@@ -55,7 +60,7 @@ public class LugaresAdapter extends RecyclerView.Adapter<LugaresAdapter.ViewHold
         return luga.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView tit;
         TextView des;
@@ -66,6 +71,14 @@ public class LugaresAdapter extends RecyclerView.Adapter<LugaresAdapter.ViewHold
             tit = (TextView)itemView.findViewById(R.id.titul);
             des = (TextView)itemView.findViewById(R.id.descr);
             img = (ImageView)itemView.findViewById(R.id.imageView9);
+
+
+
+
+        }
+
+        @Override
+        public void onClick(View view) {
 
         }
     }

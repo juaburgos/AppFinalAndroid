@@ -47,16 +47,18 @@ public class LugaresFragment extends Fragment {
         List<Lugares> impr = new ArrayList<Lugares>();
 
 
-        impr.add(new Lugares(getResources().getString(R.string.titulo), getResources().getString(R.string.descripcion),R.drawable.bela));
-        impr.add(new Lugares(getResources().getString(R.string.titulo2),getResources().getString(R.string.descripcion2),R.drawable.bela));
-        impr.add(new Lugares(getResources().getString(R.string.titulo3), getResources().getString(R.string.descripcion3),R.drawable.bela));
-        impr.add(new Lugares(getResources().getString(R.string.titulo4), getResources().getString(R.string.descripcion4),R.drawable.bela));
+        impr.add(new Lugares(getResources().getString(R.string.titulo), getResources().getString(R.string.descripcion),R.drawable.laslajas));
+        impr.add(new Lugares(getResources().getString(R.string.titulo2),getResources().getString(R.string.descripcion2),R.drawable.laguna));
+        impr.add(new Lugares(getResources().getString(R.string.titulo3), getResources().getString(R.string.descripcion3),R.drawable.lacocha));
+        impr.add(new Lugares(getResources().getString(R.string.titulo4), getResources().getString(R.string.descripcion4),R.drawable.chimayoy));
 
         listadoLugares.setHasFixedSize(true);
         final GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 2);
         listadoLugares.setLayoutManager(layoutManager);
         LugaresAdapter adapter = new LugaresAdapter(impr,myContext);
         listadoLugares.setAdapter(adapter);
+
+
         return view;
     }
 
