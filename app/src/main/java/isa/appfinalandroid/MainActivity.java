@@ -138,7 +138,8 @@ public class MainActivity extends AppCompatActivity
             fragmentClass=MpasFragment.class;
 
         } else if (id == R.id.nav_send) {
-
+            Intent i=new Intent(this,HospitalesPastoMaps.class);
+            startActivity(i);
         }
 
         try{
