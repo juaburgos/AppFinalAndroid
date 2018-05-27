@@ -69,15 +69,35 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng sydney = new LatLng(1.3625542,-78.1810467);
-        //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        markerArgentina = googleMap.addMarker(
-                new MarkerOptions()
-                        .position(sydney)
-                        .title("Argentina")
-        );
+        Bundle parametros = this.getIntent().getExtras();
+        String datos = parametros.getString("param");
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        if(datos.equalsIgnoreCase("CARRERA 19 N° 13-56 PISO 2  AV. LAS AMÉRICAS "))
+        {
+            LatLng sydney = new LatLng(1.3625542,-78.1810467);
+            //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("Argentina")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+
+        else if(datos.equalsIgnoreCase("CALLE 2 No 33-10 AV/ PANAMERICANA "))
+        {
+            LatLng sydney = new LatLng(1.3625542,-78.0467);
+            //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("Pasto")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+
+
+
 
         mMap.setInfoWindowAdapter(this);
         mMap.setOnInfoWindowClickListener(this);

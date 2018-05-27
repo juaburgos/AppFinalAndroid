@@ -132,8 +132,8 @@ public class MainActivity extends AppCompatActivity
             fragmentClass=TercerFragment.class;
 
         } else if (id == R.id.nav_manage) {
-            Intent i=new Intent(this,MapsActivity.class);
-            startActivity(i);
+/*            Intent i=new Intent(this,MapsActivity.class);
+            startActivity(i);*/
         } else if (id == R.id.nav_share) {
             fragmentClass=MpasFragment.class;
 

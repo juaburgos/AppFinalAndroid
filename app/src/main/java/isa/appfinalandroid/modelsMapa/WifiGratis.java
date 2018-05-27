@@ -9,56 +9,24 @@ import com.google.gson.annotations.SerializedName;
 
 public class WifiGratis
 {
-    @SerializedName("c_digo_dane_del_departamento")
-    @Expose
     private String cDigoDaneDelDepartamento;
-    @SerializedName("c_digo_dane_del_municipio")
-    @Expose
     private String cDigoDaneDelMunicipio;
-    @SerializedName("cantidad")
-    @Expose
     private String cantidad;
-    @SerializedName("categoria_de_departamento")
-    @Expose
     private String categoriaDeDepartamento;
-    @SerializedName("categoria_de_municipio")
-    @Expose
     private String categoriaDeMunicipio;
-    @SerializedName("departamento")
-    @Expose
     private String departamento;
-    @SerializedName("direccion")
-    @Expose
     private String direccion;
-    @SerializedName("id_zona_wifi")
-    @Expose
+    private String estado;
+    private String fechaDeAprobacion;
     private String idZonaWifi;
-    @SerializedName("latitud")
-    @Expose
-    private double latitud;
-    @SerializedName("localidad")
-    @Expose
+    private String latitud;
     private String localidad;
-    @SerializedName("longitud")
-    @Expose
-    private double longitud;
-    @SerializedName("municipio")
-    @Expose
+    private String longitud;
     private String municipio;
-    @SerializedName("no")
-    @Expose
     private String no;
-    @SerializedName("nombre_zona_wifi")
-    @Expose
     private String nombreZonaWifi;
-    @SerializedName("proyecto")
-    @Expose
     private String proyecto;
-    @SerializedName("region")
-    @Expose
     private String region;
-    @SerializedName("zona_inagurada")
-    @Expose
     private String zonaInagurada;
 
     public String getCDigoDaneDelDepartamento() {
@@ -117,6 +85,22 @@ public class WifiGratis
         this.direccion = direccion;
     }
 
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getFechaDeAprobacion() {
+        return fechaDeAprobacion;
+    }
+
+    public void setFechaDeAprobacion(String fechaDeAprobacion) {
+        this.fechaDeAprobacion = fechaDeAprobacion;
+    }
+
     public String getIdZonaWifi() {
         return idZonaWifi;
     }
@@ -125,11 +109,11 @@ public class WifiGratis
         this.idZonaWifi = idZonaWifi;
     }
 
-    public double getLatitud() {
+    public String getLatitud() {
         return latitud;
     }
 
-    public void setLatitud(double latitud) {
+    public void setLatitud(String latitud) {
         this.latitud = latitud;
     }
 
@@ -141,11 +125,12 @@ public class WifiGratis
         this.localidad = localidad;
     }
 
-    public double getLongitud() {
+    public String getLongitud() {
         return longitud;
     }
 
-    public void setLongitud(double longitud) {
+
+    public void setLongitud(String longitud) {
         this.longitud = longitud;
     }
 
@@ -196,4 +181,6 @@ public class WifiGratis
     public void setZonaInagurada(String zonaInagurada) {
         this.zonaInagurada = zonaInagurada;
     }
+
+
 }

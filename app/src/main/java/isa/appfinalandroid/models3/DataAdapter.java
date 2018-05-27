@@ -1,6 +1,8 @@
 package isa.appfinalandroid.models3;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import isa.appfinalandroid.MapsActivity;
 import isa.appfinalandroid.R;
 import isa.appfinalandroid.models.Municipios;
 
@@ -52,12 +55,33 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder>
         notifyDataSetChanged();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView nombre,direccion;
+        private CardView car;
 
         public ViewHolder(View itemView) {
             super(itemView);
             direccion=(TextView)itemView.findViewById(R.id.ed_dir);
+            car=(CardView) itemView.findViewById(R.id.carv);
+
+            car.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+
+                    final String edi1 = direccion.getText().toString();
+
+                        Intent myIntent = new Intent(context, MapsActivity.class);
+                        myIntent.putExtra("param", edi1);
+                        context.startActivity(myIntent);
+
+
+                }
+            });
+
+        }
+
+        @Override
+        public void onClick(View view) {
+
         }
     }
 }

@@ -90,8 +90,11 @@ public class MpasFragment extends Fragment implements OnMapReadyCallback {
                     List lista=response.body();
                     for(int i=0;i<lista.size();i++){
                         WifiGratis m=(WifiGratis) lista.get(i);
-                        //Log.i(TAG,"Nombre: "+m.getAreaConstruida()+" Alcalde: "+m.getAreaTerreno());
-                        LatLng sydney = new LatLng(m.getLatitud(),m.getLongitud());
+
+                        //Log.i(TAG,"Nombre: "+m.()+" Alcalde: "+m.getlongitudDouble());
+
+
+                        LatLng sydney = new LatLng(1.3625542,-78.1810467);
                         mMap.addMarker(new MarkerOptions().position(sydney).title(m.getDireccion()).snippet(m.getDepartamento()
                                 +m.getProyecto()+m.getRegion()+m.getZonaInagurada()).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,5));
