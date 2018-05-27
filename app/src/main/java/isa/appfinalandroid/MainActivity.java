@@ -149,6 +149,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 /*            Intent i=new Intent(this,MapsActivity.class);
             startActivity(i);*/
+            fragmentClass=ParquesFragment.class;
         } else if (id == R.id.nav_share) {
             fragmentClass=MpasFragment.class;
 
