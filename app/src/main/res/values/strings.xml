@@ -15,13 +15,43 @@
     <string name="title_activity_maps">Map</string>
 
     <string name="argentina_full_snippet">
-La República Argentina, conocida simplemente como Argentina,
-es un país soberano de América del Sur, ubicado en el extremo sur y sudeste
-de dicho subcontinente. Adopta la forma de gobierno republicana, representativa y federal.
-El Estado nacional convive federativamente con veinticuatro entidades
-estatales autónomas, de las cuales veintitrés son provincias
-que preservan todo el poder no delegado constitucionalmente
-a la Nación y una es la Ciudad Autónoma de Buenos Aires,
-designada por ley como capital federal.
-</string>
+        La empresa Auto Pasto S A se encuentra ubicada en la localidad de PASTO, en el
+        departamento de NARIÑO. El domicilio social de esta empresa es CARRERA 19 13 56 LAS AMERICAS SEGUNDO PISO, PASTO, NARIÑO.
+    </string>
+    <string name="argentina_COONARTAX">
+       Es una empresa solidaria Nariñense, posicionada en el sector de transporte individual de pasajeros con una amplia gama de vehículos tipo taxi, propiedad de
+        sus asociados, que prestan su servicio en la ciudad de Pasto comprometidos con la prestación de un servicio eficiente
+    </string>
+    <string name="argentina_COOTAXLUJO">
+        Es una entidad de Economía solidaria de naturaleza cooperativa con domicilio en Pasto- Nariño. Cuyo objeto social se desarrolla acorde
+        al Acuerdo Corporativo previsto en el artículo 4 de la Ley 79 de 1988, para lo cual desarrollara sus actividades sin ánimo de lucro,
+        siendo los asociados los aportantes y los gestores de la empresa cooperativa creada con el objeto de producir conjunta y eficientemente,
+        bienes y servicios para satisfacer las necesidades de sus asociados y al Público en general según sea el caso.
+    </string>
+    <string name="argentina_EMPRESAGALENA">
+    Esta empresa fué constituida como SOCIEDAD ANONIMA y se dedica a Transporte de pasajeros.
+    </string>
+    <string name="argentina_EXPRESOJUANAMBU">
+        Somos una Empresa Nariñense con Responsabilidad, Eficiencia y Excelente servicio en:
+        * Taxi Satelital
+        * Servicio Técnico de Comunicaciones
+        * Centro de Lubricacion
+        * Montallantas Automatico
+    </string>
+    <string name="argentina_FLOTAGALERAS">
+        FLOTA GALERAS S.A.
+    NIT: 891.200.061-0
+    TRADICION, CALIDAD Y CUMPLIMIENTO
+    SOMOS LA MEJOR EMPRESA DE LA CIUDAD DEDICADA AL TRANSPORTE URBANO
+    </string>
+    <string name="argentina_FLOTAGUAITARA">
+        La empresa Flota Guaitara S A se encuentra ubicada en la localidad de PASTO, en el departamento de NARIÑO.
+        El domicilio social de esta empresa es CARRERA 14 20 34 BARRIO FA, PASTO, NARIÑO.
+
+        La forma jurídica de Flota Guaitara S A es SOCIEDAD ANONIMA y su principal actividad es "Transporte de pasajeros"
+    </string>
+    <string name="argentinaTAXIEXPRESS">
+        Es una empresa Legalmente Constituida, con 25 años de experiencia en el Transporte Público Individual.
+        Trabajamos para brindarte el mejor servicio. Buscando siempre mejorar y renovarnos para seguir siendo: Tu taxi de confianza!
+    </string>
 </resources>

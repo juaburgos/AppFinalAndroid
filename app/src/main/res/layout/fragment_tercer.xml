@@ -10,6 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="122dp"
+            android:layout_marginStart="122dp"
+            android:text="Empresas de Taxis" />
+
         <android.support.v7.widget.RecyclerView
             android:id='@+id/recyclerView'
             android:layout_width="match_parent"

@@ -74,30 +74,92 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         if(datos.equalsIgnoreCase("CARRERA 19 N° 13-56 PISO 2  AV. LAS AMÉRICAS "))
         {
-            LatLng sydney = new LatLng(1.3625542,-78.1810467);
+            LatLng sydney = new LatLng(1.2095222,-77.2791655);
             //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
             markerArgentina = googleMap.addMarker(
                     new MarkerOptions()
                             .position(sydney)
-                            .title("Argentina")
+                            .title("AUTOPASTO")
             );
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
         }
 
         else if(datos.equalsIgnoreCase("CALLE 2 No 33-10 AV/ PANAMERICANA "))
         {
-            LatLng sydney = new LatLng(1.3625542,-78.0467);
+            LatLng sydney = new LatLng(1.2111786,-77.2945039);
             //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
             markerArgentina = googleMap.addMarker(
                     new MarkerOptions()
                             .position(sydney)
-                            .title("Pasto")
+                            .title("COONARTAX")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+        else if(datos.equalsIgnoreCase("CALLE 20A NO.2-48 B. LAS MERCEDES"))
+        {
+            LatLng sydney = new LatLng(1.2011058,-77.2646489);
+            //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("COOTAXLUJO")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+        else if(datos.equalsIgnoreCase("CARRERA 13 N°. 17 –21 B/ FATIMA "))
+        {
+            LatLng sydney = new LatLng(1.2033077,-77.2763717);
+            //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("EMPRESA GALENA")
             );
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
         }
 
-
-
+        else if(datos.equalsIgnoreCase("CALLE 22 No 20 BIS-24 2do PISO AV/ SANTANDER"))
+        {
+            LatLng sydney = new LatLng(1.2135647,-77.2770812);
+            //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("EXPRESO JUANAMBU")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+        else if(datos.equalsIgnoreCase("CARRERA 41 N° 20-50 B/MORASURCO"))
+        {
+            LatLng sydney = new LatLng(1.231463,-77.286437);
+            //mMap.addMarker(new MarkerOptions().position(sydney).title("El Diviso").snippet(""+"").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("FLOTA GALERAS")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+        else if(datos.equalsIgnoreCase("CARRERA 14 N° 20-34 B/FATIMA"))
+        {
+            LatLng sydney = new LatLng(1.2032072,-77.2806);
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("FLOTA GUAITARA")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
+        else if(datos.equalsIgnoreCase("CARRERA 17 N° 19-37"))
+        {
+            LatLng sydney = new LatLng(1.2073937,-77.2765907);
+            markerArgentina = googleMap.addMarker(
+                    new MarkerOptions()
+                            .position(sydney)
+                            .title("TAXI EXPRESS")
+            );
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+        }
 
         mMap.setInfoWindowAdapter(this);
         mMap.setOnInfoWindowClickListener(this);
@@ -132,10 +194,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         subInfoView.setOrientation(LinearLayout.VERTICAL);
         subInfoView.setLayoutParams(subInfoViewParams);
 
+        Bundle parametros = this.getIntent().getExtras();
+        String datos = parametros.getString("param");
+
         TextView subInfoLad = new TextView(MapsActivity.this);
-        subInfoLad.setText(" La: " + marker.getPosition().latitude);
+        //subInfoLad.setText(" La: " + marker.getPosition().latitude);
         TextView subInfoLad1 =  new TextView(MapsActivity.this);
-        subInfoLad1.setText(" La: " + marker.getPosition().longitude);
+        //subInfoLad1.setText(" La: " + marker.getPosition().longitude);
+        subInfoLad1.setText(" Dirección: " + datos);
         subInfoView.addView(subInfoLad);
         subInfoView.addView(subInfoLad1);
 
@@ -147,9 +213,52 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onInfoWindowClick(Marker marker) {
         if (marker.equals(markerArgentina)) {
+            Bundle parametros = this.getIntent().getExtras();
+            String datos = parametros.getString("param");
 
-            DialogoFragment.newInstance(marker.getTitle(),
-                    getString(R.string.argentina_full_snippet)).show(getFragmentManager(),null);
+            if(datos.equalsIgnoreCase("CARRERA 19 N° 13-56 PISO 2  AV. LAS AMÉRICAS "))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_full_snippet)).show(getFragmentManager(),null);
+            }
+
+            else if(datos.equalsIgnoreCase("CALLE 2 No 33-10 AV/ PANAMERICANA "))
+            {
+
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_COONARTAX)).show(getFragmentManager(),null);
+            }
+            else if(datos.equalsIgnoreCase("CALLE 20A NO.2-48 B. LAS MERCEDES"))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_COOTAXLUJO)).show(getFragmentManager(),null);
+            }
+            else if(datos.equalsIgnoreCase("CARRERA 13 N°. 17 –21 B/ FATIMA "))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_EMPRESAGALENA)).show(getFragmentManager(),null);
+            }
+
+            else if(datos.equalsIgnoreCase("CALLE 22 No 20 BIS-24 2do PISO AV/ SANTANDER"))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_EXPRESOJUANAMBU)).show(getFragmentManager(),null);
+            }
+            else if(datos.equalsIgnoreCase("CARRERA 41 N° 20-50 B/MORASURCO"))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_FLOTAGALERAS)).show(getFragmentManager(),null);
+            }
+            else if(datos.equalsIgnoreCase("CARRERA 14 N° 20-34 B/FATIMA"))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentina_FLOTAGUAITARA)).show(getFragmentManager(),null);
+            }
+            else if(datos.equalsIgnoreCase("CARRERA 17 N° 19-37"))
+            {
+                DialogoFragment.newInstance(marker.getTitle(),
+                        getString(R.string.argentinaTAXIEXPRESS)).show(getFragmentManager(),null);
+            }
         }
     }
 }

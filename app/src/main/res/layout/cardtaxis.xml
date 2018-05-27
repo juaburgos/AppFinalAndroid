@@ -17,6 +17,14 @@
 
 
         <TextView
+            android:id="@+id/ed_nom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_x="79dp"
+            android:layout_y="7dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
             android:id="@+id/txt_direccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,6 +47,14 @@
             android:layout_height="wrap_content"
             android:layout_x="65dp"
             android:layout_y="62dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="244dp"
+            android:layout_y="54dp"
+            card_view:srcCompat="@drawable/ic_mapa" />
 
 
     </AbsoluteLayout>
