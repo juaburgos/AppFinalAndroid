@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/carv"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,6 +14,7 @@
     <AbsoluteLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFC0A7AA"
         android:orientation="horizontal">
 
 
@@ -28,17 +30,17 @@
             android:id="@+id/txt_direccion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="8dp"
+            android:layout_x="95dp"
             android:layout_y="29dp"
             android:text="Dirección"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
             android:id="@+id/ed_dir"
-            android:layout_width="match_parent"
+            android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:layout_x="77dp"
-            android:layout_y="30dp"
+            android:layout_x="25dp"
+            android:layout_y="54dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <TextView
@@ -52,9 +54,10 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="244dp"
-            android:layout_y="54dp"
-            card_view:srcCompat="@drawable/ic_mapa" />
+            android:layout_x="99dp"
+            android:layout_y="75dp"
+            card_view:srcCompat="@drawable/ic_mapa"
+            tools:ignore="VectorDrawableCompat" />
 
 
     </AbsoluteLayout>
