@@ -109,6 +109,21 @@ public class MainActivity extends AppCompatActivity
                 }
             });
         }
+        else if (id == R.id.action_info) {
+            AlertDialog.Builder uBuilder2 = new AlertDialog.Builder(this);
+            View aView2 = getLayoutInflater().inflate(R.layout.fragment_informacion, null);
+            uBuilder2.setView(aView2);
+            final AlertDialog dialog2 = uBuilder2.create();
+            dialog2.show();
+            Button close = (Button) aView2.findViewById(R.id.close);
+
+            close.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialog2.cancel();
+                }
+            });
+        }
 
         return super.onOptionsItemSelected(item);
     }

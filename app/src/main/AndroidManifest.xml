@@ -41,7 +41,10 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".HospitalesPastoMaps"
+            android:label="@string/title_activity_hospitales_pasto_maps"></activity>
     </application>
 
 </manifest>

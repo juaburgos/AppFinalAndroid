@@ -9,12 +9,18 @@
 
     <string name="action_settings">Settings</string>
     <string name="action_acercade">Acerca de..</string>
+    <string name="action_info">Info</string>
     <string name="tvk1">Estudiante</string>
     <string name="t8">Ingeniera de sistemas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">Map</string>
 
+
+    <string name="infopasto">En Pasto, fundada en 1539, cada año se inicia con mucha alegría porque en la primera semana
+        de enero el color de la gente no interesa durante el Carnaval de Negros y Blancos. Esta es la fiesta principal de Nariño,
+        en la que convergen la integración racial y la tolerancia. Otro espectáculo único se aprecia cerca de Ipiales, donde el santuario
+        de Nuestra Señora de Las Lajas emerge del cañón del río Guáitara.</string>
     <string name="argentina_full_snippet">
         La empresa Auto Pasto S A se encuentra ubicada en la localidad de PASTO, en el
         departamento de NARIÑO. El domicilio social de esta empresa es CARRERA 19 13 56 LAS AMERICAS SEGUNDO PISO, PASTO, NARIÑO.
@@ -55,4 +61,5 @@
         Es una empresa Legalmente Constituida, con 25 años de experiencia en el Transporte Público Individual.
         Trabajamos para brindarte el mejor servicio. Buscando siempre mejorar y renovarnos para seguir siendo: Tu taxi de confianza!
     </string>
+    <string name="title_activity_hospitales_pasto_maps">Map</string>
 </resources>
