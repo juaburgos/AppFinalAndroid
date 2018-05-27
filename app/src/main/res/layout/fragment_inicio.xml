@@ -60,14 +60,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|end"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Escenarios Deportivos" />
 
                     <Button
                         android:id="@+id/button2"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Button" />
+                        android:text="Abrir" />
                 </LinearLayout>
 
             </android.support.design.widget.CoordinatorLayout>
