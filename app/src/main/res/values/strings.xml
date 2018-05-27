@@ -62,4 +62,14 @@
         Trabajamos para brindarte el mejor servicio. Buscando siempre mejorar y renovarnos para seguir siendo: Tu taxi de confianza!
     </string>
     <string name="title_activity_hospitales_pasto_maps">Map</string>
+
+    <string name="titulo">Las Lajas</string>
+    <string name="titulo2">La laguna Verde</string>
+    <string name="titulo3">La cocha</string>
+    <string name="titulo4">Chimayoy</string>
+
+    <string name="descripcion">Las Lajas</string>
+    <string name="descripcion2">La laguna Verde</string>
+    <string name="descripcion3">La cocha</string>
+    <string name="descripcion4">Chimayoy</string>
 </resources>

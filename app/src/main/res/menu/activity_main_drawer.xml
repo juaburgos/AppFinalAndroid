@@ -20,6 +20,10 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_description_black_24dp"
             android:title="Bibliotecas" />
+        <item
+            android:id="@+id/nav_lugares"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Bibliotecas" />
     </group>
 
     <item android:title="Communicate">

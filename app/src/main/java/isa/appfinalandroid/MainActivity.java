@@ -156,6 +156,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
             Intent i=new Intent(this,HospitalesPastoMaps.class);
             startActivity(i);
+        }else if (id == R.id.nav_lugares) {
+            fragmentClass=LugaresFragment.class;
         }
 
         try{
