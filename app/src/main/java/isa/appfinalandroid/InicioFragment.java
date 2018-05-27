@@ -19,7 +19,7 @@ import isa.appfinalandroid.models2.EscenariosDeportivos;
  */
 public class InicioFragment extends Fragment {
     private FragmentActivity myContext;
-    private Button btncero;
+    private Button btncero,btnuno;
     public InicioFragment() {
         // Required empty public constructor
     }
@@ -31,11 +31,27 @@ public class InicioFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_inicio, container, false);
         btncero= (Button) view.findViewById(R.id.button2);
+        btnuno= (Button) view.findViewById(R.id.button3);
 
         btncero.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Fragment fragment = null;
                 Class fragmentClass= EscenariosDeportivosFragment.class;
+                try{
+                    fragment = (Fragment) fragmentClass.newInstance();
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                FragmentManager fragmentManager=myContext.getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+
+
+            }
+        });
+        btnuno.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Fragment fragment = null;
+                Class fragmentClass= MunicipiosFragment.class;
                 try{
                     fragment = (Fragment) fragmentClass.newInstance();
                 }catch (Exception e){

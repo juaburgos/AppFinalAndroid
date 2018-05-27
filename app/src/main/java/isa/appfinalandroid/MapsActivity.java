@@ -81,7 +81,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("AUTOPASTO")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
 
         else if(datos.equalsIgnoreCase("CALLE 2 No 33-10 AV/ PANAMERICANA "))
@@ -93,7 +93,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("COONARTAX")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
         else if(datos.equalsIgnoreCase("CALLE 20A NO.2-48 B. LAS MERCEDES"))
         {
@@ -104,7 +104,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("COOTAXLUJO")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
         else if(datos.equalsIgnoreCase("CARRERA 13 N°. 17 –21 B/ FATIMA "))
         {
@@ -115,7 +115,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("EMPRESA GALENA")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
 
         else if(datos.equalsIgnoreCase("CALLE 22 No 20 BIS-24 2do PISO AV/ SANTANDER"))
@@ -127,7 +127,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("EXPRESO JUANAMBU")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
         else if(datos.equalsIgnoreCase("CARRERA 41 N° 20-50 B/MORASURCO"))
         {
@@ -138,7 +138,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("FLOTA GALERAS")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
         else if(datos.equalsIgnoreCase("CARRERA 14 N° 20-34 B/FATIMA"))
         {
@@ -148,7 +148,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("FLOTA GUAITARA")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
         else if(datos.equalsIgnoreCase("CARRERA 17 N° 19-37"))
         {
@@ -158,7 +158,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(sydney)
                             .title("TAXI EXPRESS")
             );
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 5));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
         }
 
         mMap.setInfoWindowAdapter(this);
