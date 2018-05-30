@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);*/
             fragmentClass=ParquesFragment.class;
         } else if (id == R.id.nav_share) {
-            fragmentClass=MpasFragment.class;
+            //fragmentClass=MpasFragment.class;
 
         } else if (id == R.id.nav_send) {
             Intent i=new Intent(this,HospitalesPastoMaps.class);

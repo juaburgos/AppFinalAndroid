@@ -23,7 +23,7 @@
         <item
             android:id="@+id/nav_lugares"
             android:icon="@drawable/ic_place_black_24dp"
-            android:title="Bibliotecas" />
+            android:title="Sitios Turisticos" />
     </group>
 
     <item android:title="Communicate">

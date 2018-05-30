@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PastoApp</string>
+    <string name="app_name" translatable="false">PastoApp</string>
 
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -63,13 +63,13 @@
     </string>
     <string name="title_activity_hospitales_pasto_maps">Map</string>
 
-    <string name="titulo">Las Lajas</string>
-    <string name="titulo2">La laguna Verde</string>
-    <string name="titulo3">La cocha</string>
-    <string name="titulo4">Chimayoy</string>
+    <string name="titulo">LAS LAJAS</string>
+    <string name="titulo2">LA LAGUNA VERDE</string>
+    <string name="titulo3">LA COCHA</string>
+    <string name="titulo4">CHIMAYOY</string>
 
-    <string name="descripcion">Las Lajas</string>
-    <string name="descripcion2">La laguna Verde</string>
-    <string name="descripcion3">La cocha</string>
-    <string name="descripcion4">Chimayoy</string>
+    <string name="descripcion">El Santuario de Nuestra Señora del Rosario de las Lajas es un templo y basílica para el culto cristiano y veneración de Nuestra Señora de las Lajas...</string>
+    <string name="descripcion2">La Laguna Verde del Volcán Azufral en Nariño es una de las dos "Lagunas Verdes" que duermen su sueño eterno en los repliegues de los Andes colombianos...</string>
+    <string name="descripcion3">La laguna de la Cocha, también llamada lago Guamuez, es en un gran embalse natural de origen glacial, ubicado en la locación colombiana ...</string>
+    <string name="descripcion4">Un lugar ideal para disfrutar de la naturaleza y descansar. El objetivo de éste es informar a turistas y pastusos, sobre las medidas de cuidado ambiental...</string>
 </resources>
