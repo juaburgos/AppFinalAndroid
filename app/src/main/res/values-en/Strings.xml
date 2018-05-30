@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //fragment acerca de
+
+    <string name="infopasto">In Pasto, founded in 1539, every year starts with great joy because in the first week January the color of the people does not interest during the Carnival of Blacks and Whites. This is the main festival of Nariño, in which racial integration and tolerance converge. Another unique show can be seen near Ipiales, where the sanctuary of Our Lady of Las Lajas emerges from the canyon of the Guáitara River.</string>
+
+    <string name="tvk1">Student</string>
+    <string name="t8">Systems engineer</string>
+    <string name="action_acercade">About..</string>
+
+    <string name="argentina_full_snippet">
+        The company Auto Pasto S A is located in the town of PASTO, in the department of NARIÑO. The registered office of this company is CARRERA 19 13 56 LAS AMERICAS SECOND FLOOR, PASTO, NARIÑO.
+    </string>
+    <string name="argentina_COONARTAX">
+        It is a solidarity company Nariñense, positioned in the sector of individual passenger transport with a wide range of taxi-type vehicles, owned by its associates, who provide their service in the city of Pasto committed to the provision of an efficient service
+    </string>
+    <string name="argentina_COOTAXLUJO">
+         It is an entity of solidary economy of cooperative nature with domicile in Pasto-Nariño. Whose social purpose is developed according to
+         to the Corporate Agreement provided for in Article 4 of Law 79 of 1988, for which it will develop its non-profit activities,
+         being the associates the contributors and the managers of the cooperative company created with the aim of producing jointly and efficiently,
+         goods and services to meet the needs of its members and the public in general as the case may be.
+    </string>
+    <string name="argentina_EMPRESAGALENA">
+     This company was incorporated as SOCIEDAD ANONIMA and is dedicated to Passenger Transport.
+    </string>
+    <string name="argentina_EXPRESOJUANAMBU">
+        We are a Nariñense Company with Responsibility, Efficiency and Excellent service in:
+         * Satellite Taxi
+         * Technical Communications Service
+         * Lubrication Center
+         * Automatic Montallantas
+    </string>
+    <string name="argentina_FLOTAGALERAS">
+        FLEET GALERAS S.A.
+     NIT: 891.200.061-0
+     TRADITION, QUALITY AND COMPLIANCE
+     WE ARE THE BEST COMPANY IN THE CITY DEDICATED TO URBAN TRANSPORTATION
+    </string>
+    <string name="argentina_FLOTAGUAITARA">
+         The company Flota Guaitara S A is located in the town of PASTO, in the department of NARIÑO.
+         The registered office of this company is CARRERA 14 20 34 BARRIO FA, PASTO, NARIÑO.
+
+         The legal form of Fleet Guaitara S A is SOCIEDAD ANONIMA and its main activity is "Transportation of passengers"
+    </string>
+    <string name="argentinaTAXIEXPRESS">
+        It is a Legally Constituted company, with 25 years of experience in Individual Public Transport.
+        We work to provide the best service. Always looking to improve and renew to remain: Your trusted taxi!
+    </string>
+    <string name="title_activity_hospitales_pasto_maps">Map</string>
+
+    <string name="titulo">LAS LAJAS</string>
+    <string name="titulo2">LA LAGUNA VERDE</string>
+    <string name="titulo3">LA COCHA</string>
+    <string name="titulo4">CHIMAYOY</string>
+
+    <string name="descripcion">The Sanctuary of Our Lady of the Rosary of Las Lajas is a temple and basilica for the Christian worship and veneration of Our Lady of the Lajas ...</string>
+    <string name="descripcion2">The Green Lagoon of the Azufral Volcano in Nariño is one of the two "Green Lagoons" that sleep their eternal sleep in the folds of the Colombian Andes ...</string>
+    <string name="descripcion3">The Laguna de la Cocha, also called Guamuez Lake, is in a large natural reservoir of glacial origin, located in the Colombian location ...</string>
+    <string name="descripcion4">An ideal place to enjoy nature and rest. The objective of this is to inform tourists and pastusos, about environmental care measures ...</string>
+
+    <string name="munipasto">Pasto Municipalities</string>
+    <string name="escenarios">Deportive scenary</string>
+    <string name="empres">Taxi Company</string>
+    <string name="bibliote">Libraries</string>
+    <string name="sitios">Tourist sites</string>
+    <string name="hospi">Hospitals Pasto</string>
+</resources>

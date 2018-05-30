@@ -7,23 +7,23 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_library_books_black_24dp"
-            android:title="Municipios Pasto" />
+            android:title="@string/munipasto" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_directions_run_black_24dp"
-            android:title="Escenarios Deportivos" />
+            android:title="@string/escenarios" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_drive_eta_black_24dp"
-            android:title="Empresa de Taxis" />
+            android:title="@string/empres" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_description_black_24dp"
-            android:title="Bibliotecas" />
+            android:title="@string/bibliote" />
         <item
             android:id="@+id/nav_lugares"
             android:icon="@drawable/ic_place_black_24dp"
-            android:title="Sitios Turisticos" />
+            android:title="@string/sitios" />
     </group>
 
     <item android:title="Communicate">
@@ -35,7 +35,7 @@
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_near_me_black_24dp"
-                android:title="Hospitales Pasto" />
+                android:title="@string/hospi" />
         </menu>
     </item>
 
