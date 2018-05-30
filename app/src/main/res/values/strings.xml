@@ -23,6 +23,17 @@
     <string name="sitios">Sitios Turisticos</string>
     <string name="hospi">Hospitales Pasto</string>
 
+    <string name="open">Abrir</string>
+
+    <string name="dane">Dane</string>
+    <string name="correo">Correo</string>
+    <string name="direccion">Dirección</string>
+    <string name="nit">Nit</string>
+    <string name="alcalde">Alcalde</string>
+    <string name="municipio">Municipio</string>
+    <string name="portal">Portal</string>
+    <string name="telefono">Telefono</string>
+
 
     <string name="infopasto">En Pasto, fundada en 1539, cada año se inicia con mucha alegría porque en la primera semana
         de enero el color de la gente no interesa durante el Carnaval de Negros y Blancos. Esta es la fiesta principal de Nariño,

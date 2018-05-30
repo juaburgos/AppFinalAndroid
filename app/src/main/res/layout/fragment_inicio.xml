@@ -72,13 +72,13 @@
                             android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Escenarios Deportivos" />
+                            android:text="@string/escenarios" />
 
                         <Button
                             android:id="@+id/button2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Abrir" />
+                            android:text="@string/open" />
 
                     </LinearLayout>
 
@@ -106,12 +106,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Abrir" />
+                        android:text="@string/open" />
                     <TextView
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Municipios Pasto" />
+                        android:text="@string/munipasto" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

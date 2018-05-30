@@ -64,4 +64,15 @@
     <string name="bibliote">Libraries</string>
     <string name="sitios">Tourist sites</string>
     <string name="hospi">Hospitals Pasto</string>
+
+    <string name="open">Open</string>
+
+    <string name="dane">Dane</string>
+    <string name="correo">Mail</string>
+    <string name="direccion">Address</string>
+    <string name="nit">Nit</string>
+    <string name="alcalde">Mayor</string>
+    <string name="municipio">Municipality</string>
+    <string name="portal">Portal</string>
+    <string name="telefono">Phone</string>
 </resources>
